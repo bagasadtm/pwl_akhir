@@ -40,10 +40,10 @@ $menus = [
       </header>
       <ul class="flex flex-col gap-2">
         <?php foreach($menus as $menu) : ?>
-          <li><a href="<?= $menu["url"] ?>" class="<?= $selected == $menu["title"] ? "bg-gray-800 text-white hover:text-gray-500" : "text-gray-500 hover:text-black" ?> rounded-md px-3 py-1 duration-200 font-semibold "><?= $menu["title"]?></a></li>
+          <li><a href="<?= $menu["url"] ?>" class="<?= $selected == $menu["title"] ? "bg-gray-800 text-white hover:text-gray-500 shadow-lg rounded " : "text-gray-500 hover:text-black shadow-lg rounded " ?> rounded-md px-3 py-1 duration-200 font-semibold "><?= $menu["title"]?></a></li>
         <?php endforeach; ?>
 
       </ul>
     </nav>
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col flex-grow gap-5 shadow-lg rounded p-10">
         <main>
